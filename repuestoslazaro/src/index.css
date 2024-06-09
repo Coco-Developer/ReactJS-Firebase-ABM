@@ -1,0 +1,130 @@
+/* src/index.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("s-l1200.jpg");
+  background-color: black;
+  color: #ffffff;
+
+}
+
+
+.component {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Fondo blanco semitransparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* General styles for Material UI components */
+.MuiButton-root {
+  margin: 8px;
+}
+
+.MuiPaper-root {
+  margin: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .MuiPaper-root {
+    margin: 8px;
+  }
+
+  .MuiTableCell-root {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .MuiIconButton-root {
+    padding: 8px;
+  }
+
+  .MuiTextField-root {
+    width: 100%;
+  }
+}
+
+/* Additional styles for the application */
+.MuiAppBar-root {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1100;
+}
+
+.container {
+  padding-top: 64px; /* Height of the AppBar */
+  min-height: 80vh; /* Ensure content takes up most of the screen */
+}
+
+.footer {
+  width: 100%;
+  background-color: #282c34;
+  padding: 16px;
+  text-align: center;
+  margin-top: 16px;
+  font-size: larger;
+}
+
+.dialog-container {
+  padding: 16px;
+}
+
+.grid-item {
+  width: calc(100% - 16px);
+  margin: 8px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@media (min-width: 600px) {
+  .grid-item {
+    width: calc(50% - 16px);
+  }
+}
+
+@media (min-width: 960px) {
+  .grid-item {
+    width: calc(33.33% - 16px);
+  }
+}
